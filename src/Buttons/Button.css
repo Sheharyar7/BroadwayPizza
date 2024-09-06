@@ -1,0 +1,57 @@
+.sticky-buttons {
+  position: sticky;
+  z-index: 999;
+  top: 68px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button-row {
+  display: flex;            
+  flex-wrap: nowrap;       
+  overflow-x: auto;         
+  white-space: nowrap;      
+  padding: 0;               
+  margin: 0;                
+}
+
+.col-auto {
+  flex: 0 0 auto;           
+  padding: 0;               
+  margin-right: 4px;        
+}
+
+.button-container {
+  padding: 0;              
+  margin: 0;               
+}
+
+/* Hide scrollbar */
+.button-row::-webkit-scrollbar {
+  display: none;           
+}
+
+.button-row {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;    
+}
+
+.btn {
+  margin: 0;                
+  padding: 10px 15px;       
+}
+.prevbtn{
+  border-radius: 26px;
+  width: 6px;
+  padding: 0px;
+  border: none;
+  opacity: 0.6;
+  margin-right: 14px;
+}
+.nextbtn{
+  border-radius: 26px;
+  width: 6px;
+  padding: 0px;
+  border: none;
+  opacity: 0.6;
+  margin-left: 10px;
+}

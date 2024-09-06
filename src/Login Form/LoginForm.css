@@ -1,0 +1,85 @@
+.loginform-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out forwards; 
+}
+
+.loginform-container {
+    background-color: #fff;
+    width: 50%;
+    height: 100vh;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: slideIn 0.6s ease-in-out forwards; 
+}
+
+.show-form .loginform-overlay {
+    animation: fadeIn 0.6s ease-in-out forwards; 
+    visibility: visible;
+    opacity: 1;
+}
+
+.show-form .loginform-container {
+    animation: slideIn 0.6s ease-in-out forwards; 
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.margintop {
+    margin-top: 63px;
+}
+
+.delivery, .pickup {
+    width: 36px;
+    height: 32px;
+}
+
+.formbtn {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+div p, div label {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    
+}
+div p.formtxt {
+    margin-left: 0px !important;
+}

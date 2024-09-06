@@ -1,0 +1,44 @@
+ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+.crossicon {
+    cursor: pointer;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sidebarRow {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    animation-name: show;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.sidebarRow.open {
+    left: 0; 
+    position: fixed;
+    
+}
+div ul li img{
+    margin-right: 4px;
+}
+
+

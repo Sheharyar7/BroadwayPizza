@@ -1,0 +1,126 @@
+
+.sticky-column {
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Scrollable if content exceeds */
+  background-color: #f8f9fa; /* Background color */
+}
+.sticky-logo {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white; 
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.loginshow{
+  background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+.logoimg {
+  width: 10%; 
+  height: auto;
+}
+
+.icon {
+  width: 20px;
+  height: 20px; 
+  margin: 5px; 
+}
+
+.sidebar {
+  font-family: sans-serif;
+  width: 75px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.card {
+  width: 25%; /* Adjust card width as needed */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 4px 4px 4px #ccc;
+  font-family: sans-serif;
+}
+
+.card-img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+.card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease-in-out; /* Applied to the transform property */
+}
+
+.card-title {
+  font-size: 24px; /* Adjust title size */
+  font-weight: bold; /* Bold title */
+  text-align: start; /* Center title */
+}
+
+.card-text {
+  font-size: 14px; /* Adjust subtitle size */
+  text-align: start; /* Center subtitle */
+  color: #555; /* Subtitle color */
+}
+.row2heading{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+
+
+.row1btn{
+  font-size: x-large;
+  height: 36px;
+  box-shadow: 4px 4px 4px #ccc;
+
+}
+.row1btn:hover{
+  transition: transform 0s ease-in-out; /* Applied to the transform property */
+  transform: translateY(-1px);
+
+}
+div span.row1textbg { animation: row1textbg infinite 2s ease-in-out }
+@keyframes row1textbg {
+  50% { transform: translateY(10px) }
+}
+span.row1textbg{
+  background-color: #41c54a;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: small;
+  width: 38px;
+  height: 22px;
+  font-weight:600;
+  text-align: center;
+}
+
+span.row1textbg2{
+  background-color: #c8c8c8;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: small;
+  width: 50px;
+  height: 20px;
+  font-weight:600;
+}
+p.card-text {
+  font-weight: bolder; /* Subtitle color */
+  font-size: large;
+}
+p.row1text{
+  font-size: x-small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+

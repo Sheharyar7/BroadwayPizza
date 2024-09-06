@@ -1,0 +1,32 @@
+ul li img.header-list{
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+  } 
+  ul li img:hover{
+    transform: scale(1.5);
+    transition: ease-in-out;
+  
+  }
+  img.card-img:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+  
+  }
+  ul li p{
+    font-size: small;
+  } 
+  ul li a{
+    font-size: small;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  p.navbartxt{
+    margin-left: 0%;
+  }
+  ul li{
+    cursor: pointer;
+  }
