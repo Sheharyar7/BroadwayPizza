@@ -1,11 +1,55 @@
-import React from 'react'
-import Navbar1 from '../Navbar1/Navbar1'
+import React, { useState } from 'react'
+import Navbar from '../../Navbar/Navbar'
+import Logo from '../../Logo/Logo'
+import { toast, ToastContainer } from 'react-toastify'
 
 export default function Feedback() {
+  const [message, setmessage]= useState('')
+   function feedbackmsg(e){
+    e.preventDefault()
+    if(message===''){
+      toast.error('Kindly Fill the field to submit')
+    }
+    else{
+      toast.success('Thanks For Your Feedback')
+      console.log(message)
+    }
+   }
+    function handlemessage(e){
+      let text= e.target.value;
+      setmessage(text)
+    }
   return (
     <>
-      <Navbar1 text=" Give us a Feedback"/>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, facilis quo temporibus nobis maxime id enim quasi ex. Dolores consequuntur nostrum odio corporis labore eligendi fuga mollitia aliquam ex. Nobis, itaque velit! Animi sunt eaque explicabo repellat! Voluptatem eligendi eos sequi, aspernatur itaque esse hic repellat quo inventore quae fuga neque illo, animi tempora accusamus vel veniam distinctio exercitationem odio ducimus nam reiciendis. Fuga laboriosam assumenda, voluptates est ipsam sapiente minus corrupti officia quas cum natus velit placeat molestias eum ipsum asperiores perferendis a ad atque rerum aliquam ea! Obcaecati eveniet, sit sequi tempore sint doloremque blanditiis delectus error sunt! Rerum aut rem iure at similique ullam? Sit, asperiores id dolor voluptatibus, fugit vero velit eligendi architecto assumenda impedit dolorum. Quia vitae sed facere perferendis sint, suscipit soluta praesentium exercitationem quod eos architecto molestiae, commodi obcaecati, quisquam temporibus excepturi et aliquid perspiciatis asperiores iusto quo non. Quasi amet deserunt fugiat dolorum, hic animi eaque mollitia aspernatur officiis incidunt iusto culpa. Libero beatae dolorem distinctio aut rem! Alias iusto odio molestias, temporibus, odit culpa debitis harum minus sapiente blanditiis explicabo? Maxime repudiandae atque nobis nemo nihil, quasi repellat veniam architecto, porro possimus earum fugit consectetur sit quo nesciunt perferendis! Nisi culpa repudiandae cumque assumenda totam autem dolorem, facere qui sed quis maxime quae itaque deserunt doloremque magnam rem atque necessitatibus similique quo quisquam tempora. Expedita ab quod eligendi incidunt eveniet exercitationem molestiae, suscipit porro dignissimos quidem similique eius sint, provident ullam modi distinctio veniam cupiditate animi nobis sequi officiis libero excepturi tenetur vero. Excepturi, et placeat nisi ducimus, ipsa tenetur omnis saepe explicabo voluptatem labore vero enim reprehenderit expedita? Corporis nulla eligendi molestiae impedit. Voluptate adipisci ratione itaque ducimus, beatae dolorum, eligendi voluptas delectus ex suscipit dolor quae inventore nemo earum consectetur? Alias quia quidem earum quae sed aspernatur maiores deserunt obcaecati non aperiam, dicta doloribus praesentium ut a aliquam. Iure cumque consequuntur quidem maiores animi! Praesentium nam maiores laudantium ab ex voluptatibus, sed esse suscipit non blanditiis magni quo nisi corporis a asperiores quaerat! Amet vitae perspiciatis temporibus molestias debitis, quod rem, eius pariatur voluptates qui velit expedita, vel beatae magni cum soluta ab. Id ipsum vel at dicta? Dolores impedit quo consequatur illum iusto atque sunt vitae porro, fuga delectus laboriosam nisi in ullam natus est, deserunt sed quisquam! Placeat dicta atque necessitatibus perferendis provident aperiam error nulla repellendus voluptatem harum quisquam deleniti vel et non dolorem ab enim cumque blanditiis perspiciatis qui, maiores totam ad ipsa consectetur! Ab illo earum rerum sapiente perferendis architecto provident sequi quam voluptatibus. Cum sapiente velit tenetur asperiores sint cupiditate dolores, quaerat aliquid! Sit recusandae quos ipsam cumque doloremque ea, quo officia nisi optio, perferendis itaque in molestias ab odit, unde minima facere at voluptatibus laboriosam eos voluptas atque repellat. Repudiandae accusantium, itaque minus deserunt quod facere voluptatum accusamus in eligendi voluptas laboriosam nihil voluptate consectetur dicta illum temporibus distinctio, autem fuga repellat optio quos placeat incidunt quis! Quam dolore saepe illo est modi earum non id tenetur ea accusamus, magni sequi quas in architecto illum eaque nulla accusantium ducimus hic nam autem adipisci tempore deserunt ullam? Ipsum, fugiat doloribus! Error totam quam corrupti magni. Assumenda exercitationem unde dolore enim accusamus doloribus doloremque omnis quis quod, ut dicta numquam! Provident eaque minima ipsa. Explicabo doloribus consequatur, sit accusantium reprehenderit, porro dolorum iusto repellat in, qui itaque! Iusto exercitationem quis quisquam itaque accusantium doloremque sed quae a hic consequatur laboriosam, ratione excepturi ab nemo alias fuga labore quam quaerat id vitae. Non et maxime quo voluptatum cupiditate laudantium tempora. Provident odit nihil facere amet, perferendis dicta minus? Iure iste provident excepturi, deleniti quas autem eligendi natus, enim eaque facere fuga doloremque accusamus optio veniam nihil odio ad ea quidem deserunt eius id? Non, suscipit et libero eveniet consequatur id incidunt provident distinctio pariatur quas harum nam inventore hic asperiores voluptatem eos odio aperiam iusto impedit fugit saepe autem consequuntur! Perspiciatis consequatur, voluptates, aperiam numquam sed error et sequi aspernatur provident consequuntur voluptatibus voluptatum rem deserunt similique at cumque quasi ut tenetur a accusantium optio placeat molestiae? Excepturi, esse! Eos earum nam suscipit quia quas accusantium officiis quaerat sequi reiciendis dolore ducimus voluptatibus laboriosam cupiditate quos pariatur iure perferendis minima recusandae perspiciatis, inventore esse cum ipsam! Vero, autem! Odio dolorem vel architecto voluptas nisi aperiam. Quas perspiciatis odit nobis labore suscipit provident, molestiae quae, officiis veritatis, cumque fuga voluptatum architecto molestias ratione dolor magnam est similique. Repellat ratione commodi magni voluptates mollitia modi aut natus. Eaque est blanditiis enim labore quo alias vitae voluptate et assumenda! Odio minima obcaecati amet doloremque voluptas facilis dolorem labore nostrum omnis soluta dolorum libero ad illum aliquam veniam, quos rerum, culpa corrupti voluptatibus itaque. Eveniet, error cupiditate officiis obcaecati mollitia modi cumque possimus earum praesentium vitae enim nam ducimus et, cum nulla! Enim totam nam aperiam ducimus velit accusamus quos sequi quibusdam et error architecto fugit perspiciatis in, molestiae necessitatibus aut iste dignissimos id atque! Veritatis vel ullam nostrum quam possimus pariatur voluptas explicabo doloremque quidem dolor eligendi, magnam impedit maxime odit natus! Sit ipsa aspernatur iste dolores doloremque sed voluptate, voluptatibus quae est ratione reprehenderit possimus aut doloribus ut consequatur veniam commodi repellendus cumque omnis non, architecto exercitationem voluptatem repellat eius. Libero unde ea, obcaecati omnis adipisci nemo voluptates ipsum culpa ratione amet? Distinctio nam eveniet fuga impedit nulla totam dignissimos, odio consectetur cupiditate error reprehenderit, dolorem quod numquam sint molestias ab inventore id, debitis quae consequuntur facilis labore commodi dicta adipisci. Dolore tempora, pariatur in veritatis unde tempore velit nemo cupiditate maiores consequatur ipsam vel commodi? Nihil dolorem minus ipsam porro asperiores similique eius illum consequatur ab sed rerum quis, quaerat nostrum, provident dolorum nam beatae impedit aliquid molestias mollitia possimus natus sequi. Esse eum nemo exercitationem est non optio aperiam aut, eos voluptas possimus libero numquam deleniti accusantium tenetur, consequatur, quia laboriosam omnis ipsum ratione nostrum laudantium vitae. Molestiae expedita temporibus laborum tenetur harum recusandae ipsam id doloremque. Recusandae cumque beatae blanditiis deserunt ducimus totam laudantium atque, est quo exercitationem aliquid natus quisquam error amet non.
+
+    <div className="container-fluid">
+    <div className="row">
+    <div className="col-1" >
+    <Navbar/>
+    </div>
+    <div className="col-11">
+    <Logo/>
+    <ToastContainer/>
+    <div className="container">
+        <div className="d-flex align-items-center flex-column justify-content-center vh-100">
+          <div className="col-6">
+            <form className='formbg border shadow p-4'>
+              <h3>Your Feedback</h3>
+              <div className="form-group">
+                <label htmlFor="uemail" className='my-2'>Message: </label>
+                <textarea type="text" className="form-control my-4" placeholder="Your feedback adds value to our services"  name="message" value={message} onChange={handlemessage}  required />
+              </div>
+              
+              <button type="submit" className="btn btn-warning my-2" onClick={feedbackmsg} >Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+      
     </>
   )
 }

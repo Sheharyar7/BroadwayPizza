@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import './App.css';
 import Navbar from './Navbar/Navbar';
 import Logo from './Logo/Logo';
@@ -9,16 +9,16 @@ import NavbarSlider from './NavbarSlider/NavbarSlider';
 import LoginForm from './Login Form/LoginForm';
 
 function App() {
-  const [showSlider, setShowSlider] = useState(false);
   const [showform, setShowForm] = useState(false);
   const [formVisible, setFormVisible] = useState(false);
+  const[activeitem , showactiveitem]= useState(null)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setShowForm(true);
-      setFormVisible(true);
-    }, 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowForm(true);
+  //     setFormVisible(true);
+  //   }, 1000);
+  // }, []);
 
   return (
     <>
@@ -29,20 +29,16 @@ function App() {
           }
         </div>
         <div className="row">
-          <div className="col-1 sticky-column sidebar border border-dark-rounded vh-100">
-            <Navbar setShowSlider={setShowSlider} />
-          </div>
+            <Navbar />
           <div className="col-11">
-            <div className="sticky-logo">
               <Logo />
-            </div>
             <ImageSlider />
-            <Button />
-            <Card />
+            <Button showactiveitem={showactiveitem}/>
+            <Card activeitem={activeitem} />
           </div>
         </div>
       </div>
-      {showSlider && <NavbarSlider setShowSlider={setShowSlider} />}
+      
     </>
   );
 }

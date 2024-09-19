@@ -1,0 +1,8 @@
+.downloadbtn{
+    width: 730px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 0%;
+    border: 2px solid green;
+    box-shadow: 2px 2px 2px 2px rgb(85, 83, 83);
+}

@@ -18,7 +18,7 @@ export default function Navbar1({text}) {
             </span></Link>
           <img src={logoImg} alt="logo" style={{ width: '9%' }} />
           
-          <p className='navbar1txt'><strong>{text || 'Navbar Text'}</strong></p>  
+          <p className='navbar1txt fs-4'><strong>{text || 'Navbar Text'}</strong></p>  
         </div>
       </div>
     </>

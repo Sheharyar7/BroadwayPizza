@@ -4,12 +4,12 @@
   top: 0;
   height: 100vh; /* Full height */
   overflow-y: auto; /* Scrollable if content exceeds */
-  background-color: #f8f9fa; /* Background color */
+  background-color: #f8f9fa;
+  margin-left: -12px /* Background color */
 }
 .sticky-logo {
   position: sticky;
   top: 0;
-  z-index: 1000;
   background-color: white; 
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.6);
@@ -33,7 +33,7 @@
 
 .sidebar {
   font-family: sans-serif;
-  width: 75px;
+  width: 85px;
   position: sticky;
   top: 0;
   overflow: hidden;

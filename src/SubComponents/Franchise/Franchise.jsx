@@ -1,10 +1,13 @@
 import React from 'react'
 import Form from '../Form/Form'
 
-export default function Catering() {
+
+const Franchise = () => {
   return (
     <>
-    <Form text='Catering'/>
+      <Form text='Franchise'/>
     </>
   )
 }
+
+export default Franchise

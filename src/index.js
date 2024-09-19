@@ -9,9 +9,12 @@ import Blog from'./SubComponents/Blog/Blog'
 import Catering from './SubComponents/Catering/Catering'
 import Feedback from './SubComponents/Feedback/Feedback';
 import Menu from './SubComponents/Menu/Menu';
-import LoginForm from './Login Form/LoginForm';
 import Cart from './SubComponents/Cart/Cart';
-import Profile from './SubComponents/Profile/Profile';
+import Form from './SubComponents/Form/Form';
+import Franchise from './SubComponents/Franchise/Franchise'
+import Corporate from './SubComponents/Corporate/Corporate'
+import Contact  from './SubComponents/Contact/Contact';
+import Content from './SubComponents/Content/Content';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -34,11 +37,26 @@ let allRouter= createBrowserRouter([
   {path:'/menu',
     element: <Menu/>
   },
-  {path:'/profile',
-    element: <Profile/>
+  {path:'/form',
+    element: <Form/>
   },
-  {path:'/cart-items',
+  {path:'/cart',
     element: <Cart/>
+  },
+  {path:'/cart-items/:id',
+    element: <Cart/>
+  },
+  {path:'/corporate',
+    element: <Corporate/>
+  },
+  {path:'/franchise',
+    element: <Franchise/>
+  },
+  {path:'/contact',
+    element: <Contact/>
+  },
+  {path:'/content',
+    element: <Content/>
   },
 ])
 
